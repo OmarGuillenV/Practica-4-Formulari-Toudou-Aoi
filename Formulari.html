@@ -3,89 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulari Toudou Aoi</title>
+    <link rel="stylesheet" href="style_form.css">
 </head>
 <body>
-<h1>Benvinguts al formulari Toudou!</h1>
-<!-- <form action="arxiu.html"> -->
-<div>
-    <!-- introducció al formulari -->
-    <h2>Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>
-</div>
-<form action="formulari_entregat.html">
-<div>
-    <!-- identicacio de l'usuari-->
-    <h3>Identifica't!</h3>
-    <label for="inputNom">Digue'ns com et dius: </label>
-    <input type="text" id="inputNom">
-    <br>
-    <label for="inputMail">Quin es el teu correu?: </label>
-    <input type="email" id="inputMail">
-    <br>
-    <label for="inputEdat">I ara comprobare'm la teva edat: </label>
-    <input type="number" id="inputEdat">
-    <br>
-    <label for="inputSexe">Sexe (aqui no discriminem!): </label>
-    <select name="sexe" id="inputSexe">
-        <option value="home">Home</option>
-        <option value="dona">Dona</option>
-        <option value="noBinari">No Binari</option>
-    </select>
-</div>
+    <h1 id="Titulo_Formulari">Benvinguts al formulari Toudou!</h1>
+    <!-- <form action="arxiu.html"> -->
+    <div>
+        <!-- introducció al formulari -->
+        <h2 id="subtitol_formulari">Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>
+    </div>
+    <form action="formulari_entregat.html">
+    <div>
+        <!-- identicacio de l'usuari-->
+        <h3>Identifica't!</h3>
+        <label for="inputNom">Digue'ns com et dius: </label>
+        <input type="text" id="inputNom">
+        <br>
+        <label for="inputMail">Quin es el teu correu?: </label>
+        <input type="email" id="inputMail">
+        <br>
+        <label for="inputEdat">I ara comprobare'm la teva edat: </label>
+        <input type="number" id="inputEdat">
+        <br>
+        <label for="inputSexe">Sexe (aqui no discriminem!): </label>
+        <select name="sexe" id="inputSexe">
+            <option value="home">Home</option>
+            <option value="dona">Dona</option>
+            <option value="noBinari">No Binari</option>
+        </select>
+    </div>
 
-<div>
-    <!-- eleccio de cabells-->
-    <h3>Com t'agraden les dones? Començem pel cabell..</h3>
-    <label for="inputBru">Cabell bru</label>
-    <input type="radio" id="inputBru">
-    <br>
-    <label for="inputRos">Cabell ros</label>
-    <input type="radio" id="inputRos">
-    <br>
-    <label for="inputPelroig">Cabell pelroig</label>
-    <input type="radio" id="inputPelroig">
-</div>
+    <div>
+        <!-- eleccio de cabells-->
+        <h3>Com t'agraden les dones? Començem pel cabell..</h3>
+        <label for="inputBru">Cabell bru</label>
+        <input type="radio" id="inputBru">
+        <br>
+        <label for="inputRos">Cabell ros</label>
+        <input type="radio" id="inputRos">
+        <br>
+        <label for="inputPelroig">Cabell pelroig</label>
+        <input type="radio" id="inputPelroig">
+    </div>
 
-<div>
-    <!-- selecció caracteristiques corporals-->
-    <h3>Quines son les caracteristiques que t'agraden? Marca les que consideris</h3>
-    <label for="culGran">Cul gran</label>
-    <input type="checkbox" id="culGran">
-    <br>
-    <label for="culPetit">Cul petit</label>
-    <input type="checkbox" id="culPetit">
-    <br>
-    <label for="pitGrans">Pits grans</label>
-    <input type="checkbox" id="pitGrans">
-    <br>
-    <label for="pitPetits">Pits petits</label>
-    <input type="checkbox" id="pitPetits">
-    <br>
-    <label for="malucAmple">Maluc ample</label>
-    <input type="checkbox" id="malucAmple">
-    <br>
-    <label for="malucEstret">Maluc estret</label>
-    <input type="checkbox" id="malucEstret">
-    <br>
-    <label for="camesLlargues">Cames llargues</label>
-    <input type="checkbox" id="camesLlargues">
-    <br>
-    <label for="llavisGrossos">Llavis grossos</label>
-    <input type="checkbox" id="llavisGrossos">
-    <br>
-    <label for="ullsGrans">Ulls Grans</label>
-    <input type="checkbox" id="ullsGrans">
-    <br>
-    <label for="ullsPetits">Ulls petits</label>
-    <input type="checkbox" id="ullsPetits">
-</div>
-<div>
-    <!-- descripció de miscel-lani-->
-    <h3>Alguna cosa que vulguis especificar?</h3>
-    <label for="descripcioAfegit"></label>
-    <textarea id="descripcioAfegit"></textarea>
-</div>
-    <input type="submit" value="Confirmar">
-</form>
+    <div>
+        <!-- selecció caracteristiques corporals-->
+        <h3>Quines son les caracteristiques que t'agraden? Marca les que consideris</h3>
+        <label for="culGran">Cul gran</label>
+        <input type="checkbox" id="culGran">
+        <br>
+        <label for="culPetit">Cul petit</label>
+        <input type="checkbox" id="culPetit">
+        <br>
+        <label for="pitGrans">Pits grans</label>
+        <input type="checkbox" id="pitGrans">
+        <br>
+        <label for="pitPetits">Pits petits</label>
+        <input type="checkbox" id="pitPetits">
+        <br>
+        <label for="malucAmple">Maluc ample</label>
+        <input type="checkbox" id="malucAmple">
+        <br>
+        <label for="malucEstret">Maluc estret</label>
+        <input type="checkbox" id="malucEstret">
+        <br>
+        <label for="camesLlargues">Cames llargues</label>
+        <input type="checkbox" id="camesLlargues">
+        <br>
+        <label for="llavisGrossos">Llavis grossos</label>
+        <input type="checkbox" id="llavisGrossos">
+        <br>
+        <label for="ullsGrans">Ulls Grans</label>
+        <input type="checkbox" id="ullsGrans">
+        <br>
+        <label for="ullsPetits">Ulls petits</label>
+        <input type="checkbox" id="ullsPetits">
+    </div>
+    <div>
+        <!-- descripció de miscel-lani-->
+        <h3>Alguna cosa que vulguis especificar?</h3>
+        <label for="descripcioAfegit"></label>
+        <textarea id="descripcioAfegit"></textarea>
+    </div>
+        <input type="submit" value="Confirmar">
+    </form>
 
 </body>
 </html>
