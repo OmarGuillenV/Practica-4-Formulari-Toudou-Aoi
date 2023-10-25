@@ -1,0 +1,35 @@
+/*ESTILOS FORMULARI.HTML*/
+
+body {
+    /*"background-color:rgb(57, 50, 116);*/
+    background-color: #BCB0CB;
+    background-image: url("background_image2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin-right: 200px;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#Titulo_Formulari {
+    color: rgb(28, 22, 62);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    width: 90%;
+}
+
+input#boton_tornar_enrere {
+    width: 15%;
+    height: 30px;
+    background-color: #89ABFF;
+}
+
+input#boton_tornar_enrere:hover {
+    width: 15%;
+    height: 30px;
+    background-color: #4178FF;
+}
+
+
+
