@@ -1,25 +1,23 @@
-/*ESTILOS FORMULARI_ENTREGAT.HTML*/
+/*ESTILOS FORMULARI.HTML*/
 
-body {
-    /*"background-color:rgb(57, 50, 116);*/
+body#body_formulari1 {
     background-color: #BCB0CB;
     background-image: url("background_img2.png");
     background-repeat: no-repeat;
     background-position: right top;
-    /*background-size:cover;*/
     margin-right: 200px;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1#Titulo_Formulari {
+h1#Titulo_Formulari1 {
     color: rgb(28, 22, 62);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 500%;
     width: 90%;
 }
 
-h2#subtitol_formulari {
+h2#subtitol_formulari1 {
     color: rgb(28, 22, 62);
     width: 70%;
 }
@@ -62,5 +60,38 @@ input:focus {
     border-color: black;
     outline:none;
 }
+
+/*ESTILOS FORMULARI_ENTREGAT.HTML*/
+
+body#body_formulari2 {
+    background-color: #BCB0CB;
+    background-image: url("background_img3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 35%;
+    margin-right: 200px;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#Titulo_Formulari {
+    color: rgb(28, 22, 62);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    width: 90%;
+}
+
+input#boton_tornar_enrere {
+    width: 15%;
+    height: 30px;
+    background-color: #89ABFF;
+}
+
+input#boton_tornar_enrere:hover {
+    width: 15%;
+    height: 30px;
+    background-color: #4178FF;
+}
+
 
 
