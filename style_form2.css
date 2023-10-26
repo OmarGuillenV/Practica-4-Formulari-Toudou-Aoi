@@ -3,10 +3,10 @@
 body {
     /*"background-color:rgb(57, 50, 116);*/
     background-color: #BCB0CB;
-    background-image: url("background_image2.png");
+    background-image: url("background_img3.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50%;
+    background-size: 35%;
     margin-right: 200px;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
