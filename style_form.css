@@ -1,10 +1,74 @@
 /*ESTILOS FORMULARI.HTML*/
 
-body {
-    /*"background-color:rgb(57, 50, 116);*/
+body#body_formulari1 {
+    background-color: #BCB0CB;
     background-image: url("background_img2.png");
     background-repeat: no-repeat;
     background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#Titulo_Formulari1 {
+    color: rgb(28, 22, 62);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    width: 90%;
+}
+
+h2#subtitol_formulari1 {
+    color: rgb(28, 22, 62);
+    width: 70%;
+}
+
+input.input_general  {
+    color: (28, 22, 62);
+    font-weight: bolder;
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    max-width:300px;
+}
+
+#inputEdat {
+    max-width:100px;
+}
+
+select {
+    margin-top:1%;
+}
+
+textarea#descripcioAfegit {
+    width: 300px;
+    height: 100px;
+    max-width: 300px;
+    resize: none;
+}
+
+input#boton_confirmar {
+    width: 15%;
+    height: 30px;
+    background-color: #89ABFF;
+}
+input#boton_confirmar:hover {
+    width: 15%;
+    height: 30px;
+    background-color: #4178FF;
+}
+
+input:focus {
+    border-color: black;
+    outline:none;
+}
+
+/*ESTILOS FORMULARI_ENTREGAT.HTML*/
+
+body#body_formulari2 {
+    background-color: #BCB0CB;
+    background-image: url("background_img3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 35%;
     margin-right: 200px;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,14 +81,17 @@ h1#Titulo_Formulari {
     width: 90%;
 }
 
-h2#subtitol_formulari {
-    color: rgb(28, 22, 62);
-    width: 70%;
+input#boton_tornar_enrere {
+    width: 15%;
+    height: 30px;
+    background-color: #89ABFF;
 }
 
-label.label_form {
-    color: (28, 22, 62);
-    font-weight: bolder;
-    margin-bottom: 10%;
+input#boton_tornar_enrere:hover {
+    width: 15%;
+    height: 30px;
+    background-color: #4178FF;
 }
+
+
 

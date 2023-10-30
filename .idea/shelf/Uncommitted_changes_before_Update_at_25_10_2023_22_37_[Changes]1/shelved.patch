@@ -1,0 +1,353 @@
+Index: Formulari.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Formulari Toudou Aoi</title>\r\n    <link rel=\"stylesheet\" href=\"style_form.css\">\r\n</head>\r\n<body>\r\n<h1 id=\"Titulo_Formulari\">Benvinguts al formulari Toudou!</h1>\r\n<!-- <form action=\"arxiu.html\"> -->\r\n<div>\r\n    <!-- introducció al formulari -->\r\n    <h2 id=\"subtitol_formulari\">Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>\r\n</div>\r\n<form action=\"formulari_entregat.html\">\r\n        <div>\r\n        <!-- identicacio de l'usuari-->\r\n        <h3>Identifica't!</h3>\r\n        <label for=\"inputNom\">Digue'ns com et dius: </label><br>\r\n        <input type=\"text\" id=\"inputNom\">\r\n        <br>\r\n        <label for=\"inputMail\">Quin es el teu correu?: </label><br>\r\n        <input type=\"email\" id=\"inputMail\">\r\n        <br>\r\n        <label for=\"inputEdat\">I ara comprobare'm la teva edat: </label><br>\r\n        <input type=\"number\" id=\"inputEdat\">\r\n        <br>\r\n        <label for=\"inputSexe\">Sexe (aqui no discriminem!): </label><br>\r\n        <select name=\"sexe\" id=\"inputSexe\">\r\n            <option value=\"home\">Home</option>\r\n            <option value=\"dona\">Dona</option>\r\n            <option value=\"noBinari\">No Binari</option>\r\n        </select>\r\n    </div>\r\n\r\n    <div>\r\n        <!-- eleccio de cabells-->\r\n        <h3>Com t'agraden les dones? Començem pel cabell..</h3>\r\n        <label for=\"inputBru\">Cabell bru</label>\r\n        <input type=\"radio\" id=\"inputBru\">\r\n        <br>\r\n        <label for=\"inputRos\">Cabell ros</label>\r\n        <input type=\"radio\" id=\"inputRos\">\r\n        <br>\r\n        <label for=\"inputPelroig\">Cabell pelroig</label>\r\n        <input type=\"radio\" id=\"inputPelroig\">\r\n    </div>\r\n\r\n    <div>\r\n        <!-- selecció caracteristiques corporals-->\r\n        <h3>Quines son les caracteristiques que t'agraden? Marca les que consideris</h3>\r\n        <label for=\"culGran\">Cul gran</label>\r\n        <input type=\"checkbox\" id=\"culGran\">\r\n        <br>\r\n        <label for=\"culPetit\">Cul petit</label>\r\n        <input type=\"checkbox\" id=\"culPetit\">\r\n        <br>\r\n        <label for=\"pitGrans\">Pits grans</label>\r\n        <input type=\"checkbox\" id=\"pitGrans\">\r\n        <br>\r\n        <label for=\"pitPetits\">Pits petits</label>\r\n        <input type=\"checkbox\" id=\"pitPetits\">\r\n        <br>\r\n        <label for=\"malucAmple\">Maluc ample</label>\r\n        <input type=\"checkbox\" id=\"malucAmple\">\r\n        <br>\r\n        <label for=\"malucEstret\">Maluc estret</label>\r\n        <input type=\"checkbox\" id=\"malucEstret\">\r\n        <br>\r\n        <label for=\"camesLlargues\">Cames llargues</label>\r\n        <input type=\"checkbox\" id=\"camesLlargues\">\r\n        <br>\r\n        <label for=\"llavisGrossos\">Llavis grossos</label>\r\n        <input type=\"checkbox\" id=\"llavisGrossos\">\r\n        <br>\r\n        <label for=\"ullsGrans\">Ulls Grans</label>\r\n        <input type=\"checkbox\" id=\"ullsGrans\">\r\n        <br>\r\n        <label for=\"ullsPetits\">Ulls petits</label>\r\n        <input type=\"checkbox\" id=\"ullsPetits\">\r\n    </div>\r\n    <div>\r\n        <!-- descripció de miscel-lani-->\r\n        <h3>Alguna cosa que vulguis especificar?</h3>\r\n        <label for=\"descripcioAfegit\"></label>\r\n        <textarea id=\"descripcioAfegit\"></textarea>\r\n    </div>\r\n        <input type=\"submit\" value=\"Confirmar\">\r\n</form>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Formulari.html b/Formulari.html
+--- a/Formulari.html	(revision 501cb59bbe838a0758ac0b180a798b500212b865)
++++ b/Formulari.html	(date 1698244931921)
+@@ -13,19 +13,19 @@
+     <h2 id="subtitol_formulari">Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>
+ </div>
+ <form action="formulari_entregat.html">
+-        <div>
+-        <!-- identicacio de l'usuari-->
++        <div class="container1">
++        <!-- identicació de l'usuari-->
+         <h3>Identifica't!</h3>
+-        <label for="inputNom">Digue'ns com et dius: </label><br>
+-        <input type="text" id="inputNom">
++        <label for="inputNom" class="label_container1">Digue'ns com et dius: </label><br>
++        <input type="text" id="inputNom" class="input_general">
+         <br>
+-        <label for="inputMail">Quin es el teu correu?: </label><br>
+-        <input type="email" id="inputMail">
++        <label for="inputMail" class="label_container1">Quin es el teu correu?: </label><br>
++        <input type="email" id="inputMail" class="input_general">
+         <br>
+-        <label for="inputEdat">I ara comprobare'm la teva edat: </label><br>
+-        <input type="number" id="inputEdat">
++        <label for="inputEdat" class="label_container1">I ara comprobare'm la teva edat: </label><br>
++        <input type="number" id="inputEdat" class="input_general">
+         <br>
+-        <label for="inputSexe">Sexe (aqui no discriminem!): </label><br>
++        <label for="inputSexe" class="label_container1">Sexe (aqui no discriminem!): </label><br>
+         <select name="sexe" id="inputSexe">
+             <option value="home">Home</option>
+             <option value="dona">Dona</option>
+@@ -33,59 +33,59 @@
+         </select>
+     </div>
+ 
+-    <div>
++    <div class="container2">
+         <!-- eleccio de cabells-->
+         <h3>Com t'agraden les dones? Començem pel cabell..</h3>
+-        <label for="inputBru">Cabell bru</label>
+-        <input type="radio" id="inputBru">
++        <input type="radio" id="inputBru" class="input_general">
++        <label for="inputBru" class="label_container2">Cabell bru</label>
+         <br>
+-        <label for="inputRos">Cabell ros</label>
+-        <input type="radio" id="inputRos">
++        <input type="radio" id="inputRos" class="input_general">
++        <label for="inputRos" class="label_container2">Cabell ros</label>
+         <br>
+-        <label for="inputPelroig">Cabell pelroig</label>
+-        <input type="radio" id="inputPelroig">
++        <input type="radio" id="inputPelroig" class="input_general">
++        <label for="inputPelroig" class="label_container2">Cabell pelroig</label>
+     </div>
+ 
+-    <div>
++    <div class="container3">
+         <!-- selecció caracteristiques corporals-->
+         <h3>Quines son les caracteristiques que t'agraden? Marca les que consideris</h3>
+-        <label for="culGran">Cul gran</label>
+-        <input type="checkbox" id="culGran">
++        <input type="checkbox" id="culGran" class="input_general">
++        <label for="culGran" class="label_checkbox" class="label_container3">Cul gran</label>
+         <br>
+-        <label for="culPetit">Cul petit</label>
+-        <input type="checkbox" id="culPetit">
++        <input type="checkbox" id="culPetit" class="input_general">
++        <label for="culPetit" class="label_checkbox" class="label_container3">Cul petit</label>
+         <br>
+-        <label for="pitGrans">Pits grans</label>
+-        <input type="checkbox" id="pitGrans">
++        <input type="checkbox" id="pitGrans" class="input_general">
++        <label for="pitGrans" class="label_checkbox" class="label_container3">Pits grans</label>
+         <br>
+-        <label for="pitPetits">Pits petits</label>
+-        <input type="checkbox" id="pitPetits">
++        <input type="checkbox" id="pitPetits" class="input_general">
++        <label for="pitPetits" class="label_checkbox" class="label_container3">Pits petits</label>
+         <br>
+-        <label for="malucAmple">Maluc ample</label>
+-        <input type="checkbox" id="malucAmple">
++        <input type="checkbox" id="malucAmple" class="input_general">
++        <label for="malucAmple" class="label_checkbox" class="label_container3">Maluc ample</label>
+         <br>
+-        <label for="malucEstret">Maluc estret</label>
+-        <input type="checkbox" id="malucEstret">
++        <input type="checkbox" id="malucEstret" class="input_general">
++        <label for="malucEstret" class="label_checkbox" class="label_container3">Maluc estret</label>
+         <br>
+-        <label for="camesLlargues">Cames llargues</label>
+-        <input type="checkbox" id="camesLlargues">
++        <input type="checkbox" id="camesLlargues" class="input_general">
++        <label for="camesLlargues" class="label_checkbox" class="label_container3">Cames llargues</label>
+         <br>
+-        <label for="llavisGrossos">Llavis grossos</label>
+-        <input type="checkbox" id="llavisGrossos">
++        <input type="checkbox" id="llavisGrossos" class="input_general">
++        <label for="llavisGrossos" class="label_checkbox" class="label_container3">Llavis grossos</label>
+         <br>
+-        <label for="ullsGrans">Ulls Grans</label>
+-        <input type="checkbox" id="ullsGrans">
++        <input type="checkbox" id="ullsGrans" class="input_general">
++        <label for="ullsGrans" class="label_checkbox" class="label_container3">Ulls Grans</label>
+         <br>
+-        <label for="ullsPetits">Ulls petits</label>
+-        <input type="checkbox" id="ullsPetits">
++        <input type="checkbox" id="ullsPetits" class="input_general">
++        <label for="ullsPetits" class="label_checkbox" class="label_container3">Ulls petits</label>
+     </div>
+-    <div>
++    <div class="container4">
+         <!-- descripció de miscel-lani-->
+         <h3>Alguna cosa que vulguis especificar?</h3>
+-        <label for="descripcioAfegit"></label>
+-        <textarea id="descripcioAfegit"></textarea>
++        <label for="descripcioAfegit" class="label_container4"></label>
++        <textarea id="descripcioAfegit" placeholder="Escriu més caracteristiques que t'agradin aqui..."></textarea>
+     </div>
+-        <input type="submit" value="Confirmar">
++        <input id="boton_confirmar" type="submit" value="Confirmar">
+ </form>
+ 
+ </body>
+Index: style_form.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*ESTILOS FORMULARI.HTML*/\r\n\r\nbody {\r\n    /*\"background-color:rgb(57, 50, 116);*/\r\n    background-image: url(\"background_img2.png\");\r\n    background-repeat: no-repeat;\r\n    background-position: right top;\r\n    margin-right: 200px;\r\n    background-attachment: fixed;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\nh1#Titulo_Formulari {\r\n    color: rgb(28, 22, 62);\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 500%;\r\n    width: 90%;\r\n}\r\n\r\nh2#subtitol_formulari {\r\n    color: rgb(28, 22, 62);\r\n    width: 70%;\r\n}\r\n\r\nlabel.label_form {\r\n    color: (28, 22, 62);\r\n    font-weight: bolder;\r\n    margin-bottom: 10%;\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style_form.css b/style_form.css
+--- a/style_form.css	(revision 501cb59bbe838a0758ac0b180a798b500212b865)
++++ b/style_form.css	(date 1698265915428)
+@@ -1,10 +1,12 @@
+-/*ESTILOS FORMULARI.HTML*/
++/*ESTILOS FORMULARI_ENTREGAT.HTML*/
+ 
+ body {
+     /*"background-color:rgb(57, 50, 116);*/
++    background-color: #BCB0CB;
+     background-image: url("background_img2.png");
+     background-repeat: no-repeat;
+     background-position: right top;
++    /*background-size:cover;*/
+     margin-right: 200px;
+     background-attachment: fixed;
+     font-family: Arial, Helvetica, sans-serif;
+@@ -22,9 +24,43 @@
+     width: 70%;
+ }
+ 
+-label.label_form {
++input.input_general  {
+     color: (28, 22, 62);
+     font-weight: bolder;
+-    margin-bottom: 10%;
++    margin-bottom: 1.5%;
++    margin-top: 1%;
++    max-width:300px;
++}
++
++#inputEdat {
++    max-width:100px;
++}
++
++select {
++    margin-top:1%;
++}
++
++textarea#descripcioAfegit {
++    width: 300px;
++    height: 100px;
++    max-width: 300px;
++    resize: none;
++}
++
++input#boton_confirmar {
++    width: 15%;
++    height: 30px;
++    background-color: #89ABFF;
+ }
++input#boton_confirmar:hover {
++    width: 15%;
++    height: 30px;
++    background-color: #4178FF;
++}
++
++input:focus {
++    border-color: black;
++    outline:none;
++}
++
+ 
+Index: formulari_entregat.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>formulari finalitzat!</title>\r\n    <link rel=\"stylesheet\" href=\"style_form.css\">\r\n</head>\r\n<body>\r\n<!-- pagina final del formulari-->\r\n  <h1>A veure si serem els millos amics, Brother!</h1>\r\n  <form action=\"formulari.html\">\r\n      <input type=\"submit\" value=\"torna enrere\"> <!-- creem un mini formulari per tornar enrere -->\r\n  </form>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/formulari_entregat.html b/formulari_entregat.html
+--- a/formulari_entregat.html	(revision 501cb59bbe838a0758ac0b180a798b500212b865)
++++ b/formulari_entregat.html	(date 1698264764548)
+@@ -3,13 +3,13 @@
+ <head>
+     <meta charset="UTF-8">
+     <title>formulari finalitzat!</title>
+-    <link rel="stylesheet" href="style_form.css">
++    <link rel="stylesheet" href="style_form2.css">
+ </head>
+ <body>
+ <!-- pagina final del formulari-->
+   <h1>A veure si serem els millos amics, Brother!</h1>
+   <form action="formulari.html">
+-      <input type="submit" value="torna enrere"> <!-- creem un mini formulari per tornar enrere -->
++      <input id="boton_tornar_enrere" type="submit" value="torna enrere"> <!-- creem un mini formulari per tornar enrere -->
+   </form>
+ </body>
+ </html>
+\ No newline at end of file
+Index: style_form2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style_form2.css b/style_form2.css
+new file mode 100644
+--- /dev/null	(date 1698265516199)
++++ b/style_form2.css	(date 1698265516199)
+@@ -0,0 +1,35 @@
++/*ESTILOS FORMULARI.HTML*/
++
++body {
++    /*"background-color:rgb(57, 50, 116);*/
++    background-color: #BCB0CB;
++    background-image: url("background_image2.png");
++    background-repeat: no-repeat;
++    background-position: center center;
++    background-size: 50%;
++    margin-right: 200px;
++    background-attachment: fixed;
++    font-family: Arial, Helvetica, sans-serif;
++}
++
++h1#Titulo_Formulari {
++    color: rgb(28, 22, 62);
++    font-family: Arial, Helvetica, sans-serif;
++    font-size: 500%;
++    width: 90%;
++}
++
++input#boton_tornar_enrere {
++    width: 15%;
++    height: 30px;
++    background-color: #89ABFF;
++}
++
++input#boton_tornar_enrere:hover {
++    width: 15%;
++    height: 30px;
++    background-color: #4178FF;
++}
++
++
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1ae46a81-c44f-4779-a3d6-d2e357c5d229\" name=\"Changes\" comment=\"creat arxiu .gitignore i capçalera\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Formulari Toudou.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Formulari.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CodeStyleSettingsInfer\">\r\n    <option name=\"done\" value=\"true\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2X2Fk12JMqEygmziXNAsJWPlqL4\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Sri lêhn/Documents/Practica 3 m4/css-selectors-prioritats.html\",\r\n    \"settings.editor.selected.configurable\": \"0d570cb2-96df-43cc-80da-7f777e6d0afe\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1ae46a81-c44f-4779-a3d6-d2e357c5d229\" name=\"Changes\" comment=\"\" />\r\n      <created>1697819406664</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1697819406664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"creat arxiu .gitignore i capçalera\">\r\n      <created>1697821659757</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1697821659757</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"creat arxiu .gitignore i capçalera\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"creat arxiu .gitignore i capçalera\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 501cb59bbe838a0758ac0b180a798b500212b865)
++++ b/.idea/workspace.xml	(date 1698265371369)
+@@ -4,9 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1ae46a81-c44f-4779-a3d6-d2e357c5d229" name="Changes" comment="creat arxiu .gitignore i capçalera">
++    <list default="true" id="1ae46a81-c44f-4779-a3d6-d2e357c5d229" name="Changes" comment="imagen_background añadida">
++      <change afterPath="$PROJECT_DIR$/background_image2.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/style_form2.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Formulari Toudou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Formulari.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Formulari.html" beforeDir="false" afterPath="$PROJECT_DIR$/Formulari.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/formulari_entregat.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulari_entregat.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/style_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_form.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -45,10 +49,18 @@
+     "DefaultHtmlFileTemplate": "HTML File",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "last_opened_file_path": "C:/Users/Sri lêhn/Documents/Practica 3 m4/css-selectors-prioritats.html",
++    "last_opened_file_path": "C:/Users/Donaiber Katsuma/IdeaProjects/Practica-4-Formulari-Toudou-Aoi",
+     "settings.editor.selected.configurable": "0d570cb2-96df-43cc-80da-7f777e6d0afe"
+   }
+ }]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\Donaiber Katsuma\IdeaProjects\Practica-4-Formulari-Toudou-Aoi" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\Donaiber Katsuma\IdeaProjects\Practica-4-Formulari-Toudou-Aoi" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -65,7 +77,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697821659757</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="CSS + DETALLES AÑADIDOS AL HTML">
++      <created>1698046796078</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1698046796078</updated>
++    </task>
++    <task id="LOCAL-00003" summary="imagen_background añadida">
++      <created>1698047396428</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1698047396428</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -81,6 +107,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="creat arxiu .gitignore i capçalera" />
+-    <option name="LAST_COMMIT_MESSAGE" value="creat arxiu .gitignore i capçalera" />
++    <MESSAGE value="CSS + DETALLES AÑADIDOS AL HTML" />
++    <MESSAGE value="imagen_background añadida" />
++    <option name="LAST_COMMIT_MESSAGE" value="imagen_background añadida" />
+   </component>
+ </project>
+\ No newline at end of file

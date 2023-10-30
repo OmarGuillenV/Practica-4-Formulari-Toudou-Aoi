@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Formulari Toudou Aoi</title>
     <link rel="stylesheet" href="style_form.css">
 </head>
-
-<body>
-    <h1>Benvinguts al formulari Toudou!</h1>
-    <div>
+<body id="body_formulari1">
+<h1 id="Titulo_Formulari1">Benvinguts al formulari Toudou!</h1>
+<!-- <form action="arxiu.html"> -->
+<div>
     <!-- introducció al formulari -->
-        <h2>Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>
-    </div>
+    <h2 id="subtitol_formulari1">Aquí provarem de trobar la teva parella ideal! Quin tipus de dona t'agraden! Pero abans de res necessitem algunes dades teves!</h2>
+</div>
 <form action="formulari_entregat.html">
-        <div>
-        <!-- identicacio de l'usuari-->
+        <div class="container1">
+        <!-- identicació de l'usuari-->
         <h3>Identifica't!</h3>
-            <label for="inputNom">Digue'ns com et dius: </label> <!-- aqui fiquem un camp de text-->
-            <input type="text" id="inputNom" required>
-            <br>
-            <label for="inputMail">Quin es el teu correu?: </label> <!-- aqui fiquem un camp de email-->
-            <input type="email" id="inputMail" required>
-            <br>
-            <label for="inputEdat">I ara comprobare'm la teva edat: </label> <!-- aqui fiquem un camp numè  ric-->
-            <input type="number" id="inputEdat" required>
-            <br>
-            <label for="inputSexe">Sexe (aqui no discriminem!): </label> <!-- aqui fiquem camp desplegable-->
-            <select name="sexe" id="inputSexe">
-                <option value="home">Home</option> <!-- opcions del camp desplegable-->
-                <option value="dona">Dona</option>
-                <option value="noBinari">No Binari</option>
-            </select>
+        <label for="inputNom" class="label_container1">Digue'ns com et dius: </label><br>
+        <input type="text" id="inputNom" class="input_general">
+        <br>
+        <label for="inputMail" class="label_container1">Quin es el teu correu?: </label><br>
+        <input type="email" id="inputMail" class="input_general">
+        <br>
+        <label for="inputEdat" class="label_container1">I ara comprobare'm la teva edat: </label><br>
+        <input type="number" id="inputEdat" class="input_general">
+        <br>
+        <label for="inputSexe" class="label_container1">Sexe (aqui no discriminem!): </label><br>
+        <select name="sexe" id="inputSexe">
+            <option value="home">Home</option>
+            <option value="dona">Dona</option>
+            <option value="noBinari">No Binari</option>
+        </select>
     </div>
 
-    <div>
+    <div class="container2">
         <!-- eleccio de cabells-->
         <h3>Com t'agraden les dones? Començem pel cabell..</h3>
-            <label for="inputBru">Cabell bru</label> <!-- aqui utilitzem botons de selecció radial ja seleccionat per defecte-->
-            <input type="radio" id="inputBru" checked required>
-            <br>
-            <label for="inputRos">Cabell ros</label>
-            <input type="radio" id="inputRos">
-            <br>
-            <label for="inputPelroig">Cabell pelroig</label>
-            <input type="radio" id="inputPelroig">
+        <input type="radio" id="inputBru" class="input_general">
+        <label for="inputBru" class="label_container2">Cabell bru</label>
+        <br>
+        <input type="radio" id="inputRos" class="input_general">
+        <label for="inputRos" class="label_container2">Cabell ros</label>
+        <br>
+        <input type="radio" id="inputPelroig" class="input_general">
+        <label for="inputPelroig" class="label_container2">Cabell pelroig</label>
     </div>
 
-    <div>
+    <div class="container3">
         <!-- selecció caracteristiques corporals-->
         <h3>Quines son les caracteristiques que t'agraden? Marca les que consideris</h3>
-            <label for="culGran">Cul gran</label> <!-- aqui utilitzem botons de selecció cuadre ja seleccionat per defecte-->
-            <input type="checkbox" id="culGran" checked required>
-            <br>
-            <label for="culPetit">Cul petit</label>
-            <input type="checkbox" id="culPetit">
-            <br>
-            <label for="pitGrans">Pits grans</label>
-            <input type="checkbox" id="pitGrans">
-            <br>
-            <label for="pitPetits">Pits petits</label>
-            <input type="checkbox" id="pitPetits">
-            <br>
-            <label for="malucAmple">Maluc ample</label>
-            <input type="checkbox" id="malucAmple">
-            <br>
-            <label for="malucEstret">Maluc estret</label>
-            <input type="checkbox" id="malucEstret">
-            <br>
-            <label for="camesLlargues">Cames llargues</label>
-            <input type="checkbox" id="camesLlargues">
-            <br>
-            <label for="llavisGrossos">Llavis grossos</label>
-            <input type="checkbox" id="llavisGrossos">
-            <br>
-            <label for="ullsGrans">Ulls Grans</label>
-            <input type="checkbox" id="ullsGrans">
-            <br>
-            <label for="ullsPetits">Ulls petits</label>
-            <input type="checkbox" id="ullsPetits">
+        <input type="checkbox" id="culGran" class="input_general">
+        <label for="culGran" class="label_checkbox" class="label_container3">Cul gran</label>
+        <br>
+        <input type="checkbox" id="culPetit" class="input_general">
+        <label for="culPetit" class="label_checkbox" class="label_container3">Cul petit</label>
+        <br>
+        <input type="checkbox" id="pitGrans" class="input_general">
+        <label for="pitGrans" class="label_checkbox" class="label_container3">Pits grans</label>
+        <br>
+        <input type="checkbox" id="pitPetits" class="input_general">
+        <label for="pitPetits" class="label_checkbox" class="label_container3">Pits petits</label>
+        <br>
+        <input type="checkbox" id="malucAmple" class="input_general">
+        <label for="malucAmple" class="label_checkbox" class="label_container3">Maluc ample</label>
+        <br>
+        <input type="checkbox" id="malucEstret" class="input_general">
+        <label for="malucEstret" class="label_checkbox" class="label_container3">Maluc estret</label>
+        <br>
+        <input type="checkbox" id="camesLlargues" class="input_general">
+        <label for="camesLlargues" class="label_checkbox" class="label_container3">Cames llargues</label>
+        <br>
+        <input type="checkbox" id="llavisGrossos" class="input_general">
+        <label for="llavisGrossos" class="label_checkbox" class="label_container3">Llavis grossos</label>
+        <br>
+        <input type="checkbox" id="ullsGrans" class="input_general">
+        <label for="ullsGrans" class="label_checkbox" class="label_container3">Ulls Grans</label>
+        <br>
+        <input type="checkbox" id="ullsPetits" class="input_general">
+        <label for="ullsPetits" class="label_checkbox" class="label_container3">Ulls petits</label>
     </div>
-    <div>
+    <div class="container4">
         <!-- descripció de miscel-lani-->
         <h3>Alguna cosa que vulguis especificar?</h3>
-            <label for="descripcioAfegit"></label> <!-- aqui fiquem un camp de text per escriure lliurement-->
-            <textarea id="descripcioAfegit" placeholder="Descriu-nos més coses!" required></textarea>
+        <label for="descripcioAfegit" class="label_container4"></label>
+        <textarea id="descripcioAfegit" placeholder="Escriu més caracteristiques que t'agradin aqui..."></textarea>
     </div>
-        <input type="submit" value="Confirmar">
+        <input id="boton_confirmar" type="submit" value="Confirmar">
 </form>
-
 </body>
 </html>
